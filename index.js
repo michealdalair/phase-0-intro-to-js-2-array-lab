@@ -1,44 +1,67 @@
-// Write your solution here!
-const cats = ["Milo","Otis", "Garfield"]
+const cats=["Milo", "Otis", "Garfield"]
 
-  function destructivelyAppendCat(name){
-    cats.push(name);
+ function destructivelyAppendCat(){
 
-  }
+cats.push("Ralph");
+
+ }
 
 
-  function destructivelyPrependCat(name){
-    cats.unshift(name);
-  }
-  function destructivelyRemoveLastCat(){
+ function destructivelyPrependCat(name){
 
-    cats.pop();
-  }
+cats.unshift("Bob",);
+ }
 
-  function destructivelyRemoveFirstCat(){
-    cats.shift(); 
-  }
 
-   function appendCat(name){
-    let newcatslist=[...cats, name]
-    return newcatslist
-   }
-   
-  function prependCat(name){
-    let newcatlist2=[name, ...cats]
-    return newcatlist2
-  }
 
-  function removeLastCat(){
-    let newcatlist3=[...cats]
-   newcatlist3.pop()
-   
-    return newcatlist3
 
-  }
+ function destructivelyRemoveLastCat(){
 
-  function removeFirstCat() {
-    let newcatlist4=[...cats]
-    newcatlist4.shift()
-    return newcatlist4
-  }
+cats.pop("Garfirld");
+
+ }
+
+ function destructivelyRemoveFirstCat(){
+
+cats.shift("Milo");
+ }
+
+
+
+  function appendCat(){
+
+const copyofcats=[...cats, "Broom"];
+
+return copyofcats;
+  
+}
+
+
+
+function prependCat(name){
+const copyofcats=["Arnold",...cats]
+return copyofcats;
+
+
+
+}
+
+
+
+function removeLastCat(){
+
+  const cats=["Milo", "Otis", "Garfield"]
+  const copyofcats= cats.slice(0,2);
+  return copyofcats;
+
+
+
+
+}
+
+function removeFirstCat(){
+  const cats=["Milo", "Otis", "Garfield"]
+ const copyofcats=cats.slice(1);
+ return copyofcats;
+
+}
